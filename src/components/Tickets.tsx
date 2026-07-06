@@ -124,7 +124,7 @@ export default function Tickets() {
             
             {/* Lado Esquerdo: Curadoria e Realização */}
             <div className="md:col-span-2 flex flex-col justify-start gap-6">
-              <div className="w-16 h-16 sm:w-20 sm:h-20 shrink-0 rounded-xl overflow-hidden border border-alquimia-sand">
+              <div className="w-24 h-24 sm:w-32 sm:h-32 shrink-0 rounded-xl overflow-hidden border border-alquimia-sand">
                 <img 
                   src="/palestrantes/Lais Stefhanini.jpeg" 
                   alt="Lais Stefhanini" 
