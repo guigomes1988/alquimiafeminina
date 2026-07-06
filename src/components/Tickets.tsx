@@ -54,7 +54,7 @@ function Countdown() {
 export default function Tickets() {
   return (
     <section className="bg-alquimia-wine pt-24 flex flex-col" id="tickets">
-      <div className="max-w-6xl mx-auto px-6 w-full flex-grow">
+      <div className="max-w-7xl mx-auto px-6 w-full flex-grow">
         
         {/* Para Quem É Section */}
         <div className="mb-32">
@@ -180,7 +180,7 @@ export default function Tickets() {
       
       {/* Footer / Credits */}
       <footer className="w-full bg-alquimia-dark border-t border-alquimia-gold/20 py-12 md:py-16 mt-auto">
-        <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 text-center md:text-left">
+        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 text-center md:text-left">
           
           <div className="flex flex-col md:items-start items-center">
             <span className="text-alquimia-gold/70 text-xs tracking-[0.2em] uppercase font-medium mb-2">Curadoria</span>

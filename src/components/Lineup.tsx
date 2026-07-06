@@ -94,7 +94,7 @@ const schedule = [
 export default function Lineup() {
   return (
     <section className="py-24 bg-white relative overflow-hidden" id="lineup">
-      <div className="max-w-5xl mx-auto px-6 relative z-10">
+      <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="text-center mb-24">
           <h2 className="text-3xl md:text-5xl font-serif text-alquimia-wine mb-4">A Jornada</h2>
           <p className="text-alquimia-gold font-light text-lg">Um cronograma desenhado para inspirar e equipar.</p>
