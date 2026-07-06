@@ -202,7 +202,7 @@ export default function Tickets() {
 
           {/* Botão de Inscrição Centralizado */}
           <div className="mt-12 text-center border-t border-alquimia-sand/20 pt-8">
-            <button className="w-full md:w-auto bg-alquimia-wine text-white px-16 py-5 text-lg font-semibold hover:bg-alquimia-terra transition-colors duration-300 rounded-xl shadow-lg hover:shadow-xl uppercase tracking-widest">
+            <button className="w-auto bg-alquimia-wine text-white px-8 sm:px-12 py-4 sm:py-5 text-sm sm:text-base md:text-lg font-semibold hover:bg-alquimia-terra transition-colors duration-300 rounded-xl shadow-lg hover:shadow-xl uppercase tracking-widest whitespace-nowrap">
               GARANTA SUA VAGA
             </button>
           </div>
