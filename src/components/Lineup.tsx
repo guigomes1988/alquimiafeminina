@@ -141,7 +141,7 @@ export default function Lineup() {
                     transition={{ duration: 0.6, ease: "easeOut" }}
                   >
                     <div className={`flex flex-col sm:flex-row gap-6 p-6 md:p-8 bg-white border border-alquimia-sand rounded-xl shadow-sm hover:shadow-md transition-shadow hover:border-alquimia-gold/40 ${item.highlight ? 'ring-1 ring-alquimia-gold/50 shadow-md bg-alquimia-light/30' : ''} ${!isEven ? 'sm:flex-row-reverse' : ''}`}>
-                      <div className="w-24 h-24 sm:w-32 sm:h-32 shrink-0 rounded-full overflow-hidden border border-alquimia-sand">
+                      <div className="w-24 h-24 sm:w-32 sm:h-32 shrink-0 rounded-xl overflow-hidden border border-alquimia-sand">
                         <img 
                           src={item.image} 
                           alt={item.speaker} 
