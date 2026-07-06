@@ -31,7 +31,7 @@ function Countdown() {
   }, []);
 
   return (
-    <div className="flex justify-center gap-2 sm:gap-4 md:gap-8 my-8 md:my-10">
+    <div className="flex justify-center gap-2 sm:gap-4 md:gap-8 mb-8 md:mb-10 mt-4">
       {[
         { label: 'Dias', value: timeLeft.days },
         { label: 'Horas', value: timeLeft.hours },
@@ -75,6 +75,9 @@ export default function Tickets() {
             O Alquimia Feminina é um evento desenhado para uma experiência intimista, profunda e transformadora. Vagas limitadas, garanta a sua reserva.
           </p>
           
+          <h5 className="text-xs sm:text-sm font-semibold tracking-[0.2em] text-alquimia-wine/80 uppercase mt-8">
+            O evento acontece em:
+          </h5>
           <Countdown />
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-12 w-full max-w-4xl mx-auto">
