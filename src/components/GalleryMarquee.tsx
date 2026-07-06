@@ -19,7 +19,7 @@ export default function GalleryMarquee() {
       
       <div className="flex w-max animate-marquee hover:[animation-play-state:paused]">
         {marqueeImages.map((src, idx) => (
-          <div key={idx} className="relative w-48 sm:w-64 md:w-72 flex-shrink-0 mx-2 sm:mx-3 rounded-2xl overflow-hidden shadow-xl">
+          <div key={idx} className="relative w-48 sm:w-64 md:w-72 flex-shrink-0 mx-2 sm:mx-3 rounded-2xl overflow-hidden">
             <img 
               src={src} 
               alt={`Palestrante ${idx}`} 
