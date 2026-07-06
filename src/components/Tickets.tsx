@@ -66,9 +66,11 @@ export default function Tickets() {
         >
           <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-alquimia-gold via-alquimia-wine to-alquimia-gold"></div>
           
-          <h2 className="text-3xl md:text-5xl font-serif text-alquimia-wine mb-6">
-            O Início de Uma Nova História
-          </h2>
+          <img 
+            src="/logo-v2.png" 
+            alt="Alquimia Feminina" 
+            className="h-16 sm:h-20 md:h-24 w-auto object-contain mx-auto mb-8"
+          />
           <p className="text-lg text-alquimia-wine/80 mb-6 max-w-2xl mx-auto font-light">
             O Alquimia Feminina é um espaço desenhado para uma experiência intimista, profunda e transformadora. Por este motivo, as vagas são estritamente limitadas.
           </p>
