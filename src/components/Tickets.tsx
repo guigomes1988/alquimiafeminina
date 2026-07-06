@@ -1,4 +1,4 @@
-import { MapPin, Calendar, Clock } from "lucide-react";
+import { MapPin, Calendar, Clock, Instagram } from "lucide-react";
 import { useState, useEffect } from "react";
 import { motion } from "motion/react";
 
@@ -134,7 +134,16 @@ export default function Tickets() {
               <div className="space-y-6">
                 <div>
                   <span className="text-alquimia-gold text-xs tracking-[0.2em] uppercase font-semibold block mb-2">Curadoria</span>
-                  <span className="font-serif text-2xl text-alquimia-wine block">Lais Stefhanini</span>
+                  <span className="font-serif text-2xl text-alquimia-wine block mb-1">Lais Stefhanini</span>
+                  <a 
+                    href="https://www.instagram.com/laisstefhanini/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-alquimia-gold hover:text-alquimia-wine text-xs font-medium transition-colors"
+                  >
+                    <Instagram className="w-3.5 h-3.5 shrink-0" />
+                    <span className="font-sans">@laisstefhanini</span>
+                  </a>
                 </div>
                 <div>
                   <span className="text-alquimia-gold text-xs tracking-[0.2em] uppercase font-semibold block mb-2">Realização</span>
