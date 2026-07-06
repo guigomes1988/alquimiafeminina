@@ -86,11 +86,11 @@ export default function Tickets() {
     <section className="bg-alquimia-wine pt-24 flex flex-col relative overflow-hidden" id="tickets">
       {/* Background Animated Symbols */}
       <BackgroundSymbol 
-        className="absolute -left-36 -top-36 w-[450px] h-[450px] sm:w-[600px] sm:h-[600px] text-alquimia-gold/[0.03] pointer-events-none z-0" 
+        className="absolute -left-36 -top-36 w-[450px] h-[450px] sm:w-[600px] sm:h-[600px] text-alquimia-gold/[0.1] pointer-events-none z-0" 
         rotateDirection={1} 
       />
       <BackgroundSymbol 
-        className="absolute -right-36 bottom-24 w-[500px] h-[500px] sm:w-[700px] sm:h-[700px] text-alquimia-gold/[0.04] pointer-events-none z-0" 
+        className="absolute -right-36 bottom-24 w-[500px] h-[500px] sm:w-[700px] sm:h-[700px] text-alquimia-gold/[0.1] pointer-events-none z-0" 
         rotateDirection={-1} 
       />
 
