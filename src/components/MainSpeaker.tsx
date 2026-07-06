@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import { Instagram } from "lucide-react";
 
 export default function MainSpeaker() {
   return (
@@ -47,6 +48,17 @@ export default function MainSpeaker() {
               <p>
                 O evento é puxado pela presença de Mônica Salgado, jornalista e influenciadora de ampla audiência, reconhecida por uma comunicação forte e por um engajamento feminino intenso e fiel, na mesma linha do evento: sem vitimismo, pautada pela força e pela escolha do <strong className="font-semibold">protagonismo</strong>.
               </p>
+            </div>
+            <div className="mt-8 flex justify-center lg:justify-start">
+              <a 
+                href="https://www.instagram.com/monicasalgado/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2.5 bg-alquimia-wine text-alquimia-light px-6 py-3 rounded-xl font-semibold hover:bg-alquimia-terra transition-colors duration-300 shadow-md hover:shadow-lg text-xs tracking-wider uppercase"
+              >
+                <Instagram className="w-4 h-4 shrink-0" />
+                <span>Conheça mais</span>
+              </a>
             </div>
           </motion.div>
 
