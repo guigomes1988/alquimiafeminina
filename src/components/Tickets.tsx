@@ -1,4 +1,4 @@
-import { Target, ShieldCheck, Briefcase, Zap, MapPin, Calendar, Clock } from "lucide-react";
+import { MapPin, Calendar, Clock } from "lucide-react";
 import { useState, useEffect } from "react";
 import { motion } from "motion/react";
 
@@ -56,62 +56,6 @@ export default function Tickets() {
     <section className="bg-alquimia-wine pt-24 flex flex-col" id="tickets">
       <div className="max-w-7xl mx-auto px-6 w-full flex-grow">
         
-        {/* Para Quem É Section */}
-        <div className="mb-32">
-          <motion.div 
-            className="text-center mb-16"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-50px" }}
-            transition={{ duration: 0.6 }}
-          >
-            <h2 className="text-3xl md:text-5xl font-serif text-alquimia-light mb-4">Para Quem É Este Encontro</h2>
-            <p className="text-alquimia-sand font-light text-lg">Uma tarde desenhada para perfis específicos de ação.</p>
-          </motion.div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-            {[
-              {
-                icon: <Target className="w-6 h-6" />,
-                title: "Protagonistas",
-                desc: "Mulheres que desejam transformar suas próprias trajetórias em recursos estratégicos e reais."
-              },
-              {
-                icon: <Briefcase className="w-6 h-6" />,
-                title: "Líderes",
-                desc: "Profissionais em busca de um repertório maduro, propositivo e inspirador."
-              },
-              {
-                icon: <Zap className="w-6 h-6" />,
-                title: "Decisoras",
-                desc: "Aquelas que valorizam a autonomia, a presença marcante e o poder de ação prático."
-              },
-              {
-                icon: <ShieldCheck className="w-6 h-6" />,
-                title: "Estratégicas",
-                desc: "Mulheres que buscam conexões autênticas em um ambiente de alto padrão e sem vitimismo."
-              }
-            ].map((item, idx) => (
-              <motion.div 
-                key={idx} 
-                className="p-8 md:p-10 bg-alquimia-light rounded-2xl flex flex-col sm:flex-row gap-6 items-start shadow-xl border border-alquimia-gold/20 group hover:shadow-2xl transition-all"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
-                transition={{ duration: 0.6, delay: idx * 0.1 }}
-              >
-                <div className="w-14 h-14 rounded-full bg-alquimia-wine text-alquimia-light flex items-center justify-center shrink-0 shadow-inner">
-                  {item.icon}
-                </div>
-                <div>
-                  <h3 className="text-xl font-serif text-alquimia-wine mb-3 group-hover:text-alquimia-terra transition-colors">{item.title}</h3>
-                  <p className="text-alquimia-dark/80 font-light leading-relaxed">{item.desc}</p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-
         {/* Ingresso / Escassez Section */}
         <motion.div 
           className="bg-alquimia-light rounded-3xl p-6 sm:p-8 md:p-16 lg:p-20 text-center max-w-5xl mx-auto relative overflow-hidden shadow-2xl mb-24"
