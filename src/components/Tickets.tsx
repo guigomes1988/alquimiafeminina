@@ -123,7 +123,7 @@ export default function Tickets() {
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-12 text-left mt-16 w-full max-w-4xl mx-auto border-t border-alquimia-sand/40 pt-12">
             
             {/* Lado Esquerdo: Curadoria e Realização */}
-            <div className="md:col-span-2 flex flex-col justify-start gap-6">
+            <div className="md:col-span-2 flex flex-col items-center md:items-end text-center md:text-right justify-start gap-6">
               <div className="w-24 h-24 sm:w-32 sm:h-32 shrink-0 rounded-xl overflow-hidden border border-alquimia-sand">
                 <img 
                   src="/palestrantes/Lais Stefhanini.jpeg" 
@@ -139,7 +139,7 @@ export default function Tickets() {
                     href="https://www.instagram.com/laisstefhanini/" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 text-alquimia-gold hover:text-alquimia-wine text-xs font-medium transition-colors"
+                    className="inline-flex items-center gap-1.5 text-alquimia-gold hover:text-alquimia-wine text-xs font-medium transition-colors justify-center md:justify-end"
                   >
                     <Instagram className="w-3.5 h-3.5 shrink-0" />
                     <span className="font-sans">@laisstefhanini</span>
@@ -183,7 +183,7 @@ export default function Tickets() {
                   <span className="font-serif text-lg text-alquimia-wine block font-medium">Localização</span>
                   <span className="font-light text-alquimia-dark text-sm leading-relaxed block">
                     <strong className="font-semibold block mb-0.5">Espaço Genesis</strong>
-                    R. José Bueno Ávila, 290 - Lot. Parque Real Guacu<br />Mogi Guaçu - SP
+                    R. José Bueno Ávila, 290<br />Lot. Parque Real Guacu<br />Mogi Guaçu - SP
                   </span>
                   <a 
                     href="https://www.google.com/maps/search/?api=1&query=Espa%C3%A7o+Genesis,+R.+Jos%C3%A9+Bueno+%C3%81vila,+290+-+Lot.+Parque+Real+Guacu,+Mogi+Gua%C3%A7u+-+SP"
