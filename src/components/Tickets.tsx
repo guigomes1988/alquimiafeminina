@@ -80,70 +80,83 @@ export default function Tickets() {
           </h5>
           <Countdown />
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-12 w-full max-w-4xl mx-auto">
-             <div className="bg-white border border-alquimia-sand rounded-xl p-6 flex flex-col items-center text-center shadow-sm">
-               <div className="w-12 h-12 rounded-full bg-alquimia-gold/10 flex items-center justify-center text-alquimia-gold mb-4">
-                 <Calendar className="w-6 h-6" />
-               </div>
-               <span className="font-serif text-lg text-alquimia-wine mb-2">Data do Evento</span>
-               <span className="font-light text-alquimia-dark text-sm">06 de Agosto de 2026</span>
-             </div>
-             
-             <div className="bg-white border border-alquimia-sand rounded-xl p-6 flex flex-col items-center text-center shadow-sm">
-               <div className="w-12 h-12 rounded-full bg-alquimia-gold/10 flex items-center justify-center text-alquimia-gold mb-4">
-                 <Clock className="w-6 h-6" />
-               </div>
-               <span className="font-serif text-lg text-alquimia-wine mb-2">Horário</span>
-               <span className="font-light text-alquimia-dark text-sm">A confirmar</span>
-             </div>
+                 <div className="grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-12 text-left mt-16 w-full max-w-4xl mx-auto border-t border-alquimia-sand/40 pt-12">
+            
+            {/* Lado Esquerdo: Curadoria e Realização */}
+            <div className="md:col-span-2 flex flex-col justify-start gap-8">
+              <div>
+                <span className="text-alquimia-gold text-xs tracking-[0.2em] uppercase font-semibold block mb-2">Curadoria</span>
+                <span className="font-serif text-2xl text-alquimia-wine block">Lais Stefhanini</span>
+              </div>
+              <div>
+                <span className="text-alquimia-gold text-xs tracking-[0.2em] uppercase font-semibold block mb-2">Realização</span>
+                <span className="font-serif text-2xl text-alquimia-wine block">Âmbar Círculo</span>
+              </div>
+            </div>
 
-             <div className="bg-white border border-alquimia-sand rounded-xl p-6 flex flex-col items-center text-center shadow-sm">
-               <div className="w-12 h-12 rounded-full bg-alquimia-gold/10 flex items-center justify-center text-alquimia-gold mb-4">
-                 <MapPin className="w-6 h-6" />
-               </div>
-               <span className="font-serif text-lg text-alquimia-wine mb-2">Localização</span>
-               <span className="font-light text-alquimia-dark text-sm leading-relaxed mb-3">
-                 <strong className="font-medium block mb-1">Espaço Genesis</strong>
-                 R. José Bueno Ávila, 290 - Lot. Parque Real Guacu<br />Mogi Guaçu - SP
-               </span>
-               <a 
-                 href="https://www.google.com/maps/search/?api=1&query=Espa%C3%A7o+Genesis,+R.+Jos%C3%A9+Bueno+%C3%81vila,+290+-+Lot.+Parque+Real+Guacu,+Mogi+Gua%C3%A7u+-+SP"
-                 target="_blank"
-                 rel="noopener noreferrer"
-                 className="text-alquimia-gold hover:text-alquimia-wine text-[10px] sm:text-xs font-bold uppercase tracking-widest underline underline-offset-4 transition-colors"
-               >
-                 Como chegar
-               </a>
-             </div>
-          </div>
-          
-          
-          <div>
-            <button className="w-full md:w-auto bg-alquimia-wine text-white px-12 py-5 text-lg font-medium hover:bg-alquimia-terra transition-colors duration-300 rounded-xl shadow-lg hover:shadow-xl">
-              Reservar Meu Lugar Agora
-            </button>
+            {/* Lado Direito: Detalhes e Botão de Reserva */}
+            <div className="md:col-span-3 flex flex-col justify-between gap-8">
+              <div className="space-y-6">
+                
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-full bg-alquimia-gold/10 flex items-center justify-center text-alquimia-gold shrink-0">
+                    <Calendar className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <span className="font-serif text-lg text-alquimia-wine block font-medium">Data do Evento</span>
+                    <span className="font-light text-alquimia-dark text-sm block">06 de Agosto de 2026</span>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-full bg-alquimia-gold/10 flex items-center justify-center text-alquimia-gold shrink-0">
+                    <Clock className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <span className="font-serif text-lg text-alquimia-wine block font-medium">Horário</span>
+                    <span className="font-light text-alquimia-dark text-sm block">A confirmar</span>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-full bg-alquimia-gold/10 flex items-center justify-center text-alquimia-gold shrink-0">
+                    <MapPin className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <span className="font-serif text-lg text-alquimia-wine block font-medium">Localização</span>
+                    <span className="font-light text-alquimia-dark text-sm leading-relaxed block">
+                      <strong className="font-semibold block mb-0.5">Espaço Genesis</strong>
+                      R. José Bueno Ávila, 290 - Lot. Parque Real Guacu<br />Mogi Guaçu - SP
+                    </span>
+                    <a 
+                      href="https://www.google.com/maps/search/?api=1&query=Espa%C3%A7o+Genesis,+R.+Jos%C3%A9+Bueno+%C3%81vila,+290+-+Lot.+Parque+Real+Guacu,+Mogi+Gua%C3%A7u+-+SP"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-alquimia-gold hover:text-alquimia-wine text-xs font-bold uppercase tracking-widest underline underline-offset-4 mt-2 inline-block transition-colors"
+                    >
+                      Como chegar
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+
+              <div className="pt-4 border-t border-alquimia-sand/20">
+                <button className="w-full bg-alquimia-wine text-white px-10 py-4.5 text-base font-semibold hover:bg-alquimia-terra transition-colors duration-300 rounded-xl shadow-lg hover:shadow-xl uppercase tracking-wider">
+                  Inscreva-se agora
+                </button>
+              </div>
+
+            </div>
+
           </div>
         </motion.div>
 
       </div>
       
       {/* Footer / Credits */}
-      <footer className="w-full bg-alquimia-dark border-t border-alquimia-gold/20 py-12 md:py-16 mt-auto">
-        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 text-center md:text-left">
-          
-          <div className="flex flex-col md:items-start items-center">
-            <span className="text-alquimia-gold/70 text-xs tracking-[0.2em] uppercase font-medium mb-2">Curadoria</span>
-            <span className="text-alquimia-light font-serif text-xl md:text-2xl">Lais Stefhanini</span>
-          </div>
-
-          <div className="flex flex-col md:items-end items-center">
-            <span className="text-alquimia-gold/70 text-xs tracking-[0.2em] uppercase font-medium mb-2">Realização</span>
-            <span className="text-alquimia-light font-serif text-xl md:text-2xl">Âmbar Círculo</span>
-          </div>
-
-        </div>
-        
-        <div className="w-full text-center mt-12 pt-8 border-t border-alquimia-gold/10">
+      <footer className="w-full bg-alquimia-dark border-t border-alquimia-gold/20 py-8 mt-auto">
+        <div className="max-w-7xl mx-auto px-6 text-center">
            <p className="text-alquimia-sand/40 text-xs">
              &copy; {new Date().getFullYear()} Alquimia Feminina. Todos os direitos reservados.
            </p>
