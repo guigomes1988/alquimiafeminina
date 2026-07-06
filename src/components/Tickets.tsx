@@ -120,75 +120,82 @@ export default function Tickets() {
           </h5>
           <Countdown />
           
-                 <div className="grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-12 text-left mt-16 w-full max-w-4xl mx-auto border-t border-alquimia-sand/40 pt-12">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-12 text-left mt-16 w-full max-w-4xl mx-auto border-t border-alquimia-sand/40 pt-12">
             
             {/* Lado Esquerdo: Curadoria e Realização */}
-            <div className="md:col-span-2 flex flex-col justify-start gap-8">
-              <div>
-                <span className="text-alquimia-gold text-xs tracking-[0.2em] uppercase font-semibold block mb-2">Curadoria</span>
-                <span className="font-serif text-2xl text-alquimia-wine block">Lais Stefhanini</span>
+            <div className="md:col-span-2 flex flex-col justify-start gap-6">
+              <div className="w-16 h-16 sm:w-20 sm:h-20 shrink-0 rounded-xl overflow-hidden border border-alquimia-sand">
+                <img 
+                  src="/palestrantes/Lais Stefhanini.jpeg" 
+                  alt="Lais Stefhanini" 
+                  className="w-full h-full object-cover object-top"
+                />
               </div>
-              <div>
-                <span className="text-alquimia-gold text-xs tracking-[0.2em] uppercase font-semibold block mb-2">Realização</span>
-                <span className="font-serif text-2xl text-alquimia-wine block">Âmbar Círculo</span>
-              </div>
-            </div>
-
-            {/* Lado Direito: Detalhes e Botão de Reserva */}
-            <div className="md:col-span-3 flex flex-col justify-between gap-8">
               <div className="space-y-6">
-                
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-full bg-alquimia-gold/10 flex items-center justify-center text-alquimia-gold shrink-0">
-                    <Calendar className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <span className="font-serif text-lg text-alquimia-wine block font-medium">Data do Evento</span>
-                    <span className="font-light text-alquimia-dark text-sm block">06 de Agosto de 2026</span>
-                  </div>
+                <div>
+                  <span className="text-alquimia-gold text-xs tracking-[0.2em] uppercase font-semibold block mb-2">Curadoria</span>
+                  <span className="font-serif text-2xl text-alquimia-wine block">Lais Stefhanini</span>
                 </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-full bg-alquimia-gold/10 flex items-center justify-center text-alquimia-gold shrink-0">
-                    <Clock className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <span className="font-serif text-lg text-alquimia-wine block font-medium">Horário</span>
-                    <span className="font-light text-alquimia-dark text-sm block">A confirmar</span>
-                  </div>
+                <div>
+                  <span className="text-alquimia-gold text-xs tracking-[0.2em] uppercase font-semibold block mb-2">Realização</span>
+                  <span className="font-serif text-2xl text-alquimia-wine block">Âmbar Círculo</span>
                 </div>
+              </div>
+            </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-full bg-alquimia-gold/10 flex items-center justify-center text-alquimia-gold shrink-0">
-                    <MapPin className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <span className="font-serif text-lg text-alquimia-wine block font-medium">Localização</span>
-                    <span className="font-light text-alquimia-dark text-sm leading-relaxed block">
-                      <strong className="font-semibold block mb-0.5">Espaço Genesis</strong>
-                      R. José Bueno Ávila, 290 - Lot. Parque Real Guacu<br />Mogi Guaçu - SP
-                    </span>
-                    <a 
-                      href="https://www.google.com/maps/search/?api=1&query=Espa%C3%A7o+Genesis,+R.+Jos%C3%A9+Bueno+%C3%81vila,+290+-+Lot.+Parque+Real+Guacu,+Mogi+Gua%C3%A7u+-+SP"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-alquimia-gold hover:text-alquimia-wine text-xs font-bold uppercase tracking-widest underline underline-offset-4 mt-2 inline-block transition-colors"
-                    >
-                      Como chegar
-                    </a>
-                  </div>
+            {/* Lado Direito: Detalhes */}
+            <div className="md:col-span-3 space-y-6">
+              
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 rounded-full bg-alquimia-gold/10 flex items-center justify-center text-alquimia-gold shrink-0">
+                  <Calendar className="w-5 h-5" />
                 </div>
-
+                <div>
+                  <span className="font-serif text-lg text-alquimia-wine block font-medium">Data do Evento</span>
+                  <span className="font-light text-alquimia-dark text-sm block">06 de Agosto de 2026</span>
+                </div>
               </div>
 
-              <div className="pt-4 border-t border-alquimia-sand/20">
-                <button className="w-full bg-alquimia-wine text-white px-10 py-4.5 text-base font-semibold hover:bg-alquimia-terra transition-colors duration-300 rounded-xl shadow-lg hover:shadow-xl uppercase tracking-wider">
-                  Inscreva-se agora
-                </button>
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 rounded-full bg-alquimia-gold/10 flex items-center justify-center text-alquimia-gold shrink-0">
+                  <Clock className="w-5 h-5" />
+                </div>
+                <div>
+                  <span className="font-serif text-lg text-alquimia-wine block font-medium">Horário</span>
+                  <span className="font-light text-alquimia-dark text-sm block">A confirmar</span>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 rounded-full bg-alquimia-gold/10 flex items-center justify-center text-alquimia-gold shrink-0">
+                  <MapPin className="w-5 h-5" />
+                </div>
+                <div>
+                  <span className="font-serif text-lg text-alquimia-wine block font-medium">Localização</span>
+                  <span className="font-light text-alquimia-dark text-sm leading-relaxed block">
+                    <strong className="font-semibold block mb-0.5">Espaço Genesis</strong>
+                    R. José Bueno Ávila, 290 - Lot. Parque Real Guacu<br />Mogi Guaçu - SP
+                  </span>
+                  <a 
+                    href="https://www.google.com/maps/search/?api=1&query=Espa%C3%A7o+Genesis,+R.+Jos%C3%A9+Bueno+%C3%81vila,+290+-+Lot.+Parque+Real+Guacu,+Mogi+Gua%C3%A7u+-+SP"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-alquimia-gold hover:text-alquimia-wine text-xs font-bold uppercase tracking-widest underline underline-offset-4 mt-2 inline-block transition-colors"
+                  >
+                    Como chegar
+                  </a>
+                </div>
               </div>
 
             </div>
 
+          </div>
+
+          {/* Botão de Inscrição Centralizado */}
+          <div className="mt-12 text-center border-t border-alquimia-sand/20 pt-8">
+            <button className="w-full md:w-auto bg-alquimia-wine text-white px-16 py-5 text-lg font-semibold hover:bg-alquimia-terra transition-colors duration-300 rounded-xl shadow-lg hover:shadow-xl uppercase tracking-widest">
+              GARANTA SUA VAGA
+            </button>
           </div>
         </motion.div>
 
