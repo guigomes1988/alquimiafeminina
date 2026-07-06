@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300..700;1,300..700&display=swap');
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Charter';
+  src: url('/font/Charter.ttc') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@theme {
+  --font-sans: "Work Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Charter", "Playfair Display", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+
+  --color-alquimia-light: #f2e7d6;
+  --color-alquimia-sand: #e7d6bf;
+  --color-alquimia-gold: #a9874f;
+  --color-alquimia-terra: #9c4a35;
+  --color-alquimia-wine: #7a2e2a;
+  --color-alquimia-dark: #5a3528;
+
+  --animate-marquee: marquee 120s linear infinite;
+  @keyframes marquee {
+    to { transform: translateX(-50%); }
+  }
+}

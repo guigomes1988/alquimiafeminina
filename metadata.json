@@ -1,0 +1,6 @@
+{
+  "name": "Alquimia Feminina",
+  "description": "Landing page for the Alquimia Feminina premium event.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
