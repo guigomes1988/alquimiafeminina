@@ -72,7 +72,7 @@ export default function Tickets() {
             className="h-24 sm:h-32 md:h-40 w-auto object-contain mx-auto mb-8"
           />
           <p className="text-lg text-alquimia-wine/80 mb-6 max-w-2xl mx-auto font-light">
-            O Alquimia Feminina é um espaço desenhado para uma experiência intimista, profunda e transformadora. Por este motivo, as vagas são estritamente limitadas.
+            O Alquimia Feminina é um evento desenhado para uma experiência intimista, profunda e transformadora. Vagas limitadas, garanta a sua reserva.
           </p>
           
           <Countdown />
