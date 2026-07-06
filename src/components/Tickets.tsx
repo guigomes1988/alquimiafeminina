@@ -69,7 +69,7 @@ export default function Tickets() {
           <img 
             src="/logo-v2.png" 
             alt="Alquimia Feminina" 
-            className="h-16 sm:h-20 md:h-24 w-auto object-contain mx-auto mb-8"
+            className="h-24 sm:h-32 md:h-40 w-auto object-contain mx-auto mb-8"
           />
           <p className="text-lg text-alquimia-wine/80 mb-6 max-w-2xl mx-auto font-light">
             O Alquimia Feminina é um espaço desenhado para uma experiência intimista, profunda e transformadora. Por este motivo, as vagas são estritamente limitadas.
