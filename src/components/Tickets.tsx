@@ -120,7 +120,7 @@ export default function Tickets() {
           </h5>
           <Countdown />
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 text-left mt-16 w-full max-w-4xl mx-auto border-t border-alquimia-sand/40 pt-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 text-center md:text-left mt-16 w-full max-w-4xl mx-auto border-t border-alquimia-sand/40 pt-12">
             
             {/* Lado Esquerdo: Curadoria e Realização */}
             <div className="flex flex-col items-center md:items-end text-center md:text-right justify-start gap-6">
@@ -153,33 +153,33 @@ export default function Tickets() {
             </div>
 
             {/* Lado Direito: Detalhes */}
-            <div className="space-y-6">
+            <div className="flex flex-col items-center md:items-start gap-6 w-full">
               
-              <div className="flex items-start gap-4">
+              <div className="flex flex-col items-center md:flex-row md:items-start gap-3 md:gap-4">
                 <div className="w-10 h-10 rounded-full bg-alquimia-gold/10 flex items-center justify-center text-alquimia-gold shrink-0">
                   <Calendar className="w-5 h-5" />
                 </div>
-                <div>
+                <div className="flex flex-col items-center md:items-start">
                   <span className="font-serif text-lg text-alquimia-wine block font-medium">Data do Evento</span>
                   <span className="font-light text-alquimia-dark text-sm block">06 de Agosto de 2026</span>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4">
+              <div className="flex flex-col items-center md:flex-row md:items-start gap-3 md:gap-4">
                 <div className="w-10 h-10 rounded-full bg-alquimia-gold/10 flex items-center justify-center text-alquimia-gold shrink-0">
                   <Clock className="w-5 h-5" />
                 </div>
-                <div>
+                <div className="flex flex-col items-center md:items-start">
                   <span className="font-serif text-lg text-alquimia-wine block font-medium">Horário</span>
                   <span className="font-light text-alquimia-dark text-sm block">A confirmar</span>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4">
+              <div className="flex flex-col items-center md:flex-row md:items-start gap-3 md:gap-4">
                 <div className="w-10 h-10 rounded-full bg-alquimia-gold/10 flex items-center justify-center text-alquimia-gold shrink-0">
                   <MapPin className="w-5 h-5" />
                 </div>
-                <div>
+                <div className="flex flex-col items-center md:items-start">
                   <span className="font-serif text-lg text-alquimia-wine block font-medium">Localização</span>
                   <span className="font-light text-alquimia-dark text-sm leading-relaxed block">
                     <strong className="font-semibold block mb-0.5">Espaço Genesis</strong>
