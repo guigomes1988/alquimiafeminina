@@ -18,7 +18,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <section className="relative min-h-[85vh] flex bg-alquimia-wine text-alquimia-light overflow-hidden">
+      <section className="relative min-h-[85vh] flex items-center bg-alquimia-wine text-alquimia-light overflow-hidden">
         {/* Image Background */}
         <div className="absolute inset-0 w-full h-full">
            {/* Gradients to ensure text readability */}
