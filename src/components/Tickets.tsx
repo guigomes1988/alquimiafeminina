@@ -120,10 +120,10 @@ export default function Tickets() {
           </h5>
           <Countdown />
           
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-12 text-left mt-16 w-full max-w-4xl mx-auto border-t border-alquimia-sand/40 pt-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 text-left mt-16 w-full max-w-4xl mx-auto border-t border-alquimia-sand/40 pt-12">
             
             {/* Lado Esquerdo: Curadoria e Realização */}
-            <div className="md:col-span-2 flex flex-col items-center md:items-end text-center md:text-right justify-start gap-6">
+            <div className="flex flex-col items-center md:items-end text-center md:text-right justify-start gap-6">
               <div className="w-24 h-24 sm:w-32 sm:h-32 shrink-0 rounded-xl overflow-hidden border border-alquimia-sand">
                 <img 
                   src="/palestrantes/Lais Stefhanini.jpeg" 
@@ -153,7 +153,7 @@ export default function Tickets() {
             </div>
 
             {/* Lado Direito: Detalhes */}
-            <div className="md:col-span-3 space-y-6">
+            <div className="space-y-6">
               
               <div className="flex items-start gap-4">
                 <div className="w-10 h-10 rounded-full bg-alquimia-gold/10 flex items-center justify-center text-alquimia-gold shrink-0">
