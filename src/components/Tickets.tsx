@@ -171,7 +171,7 @@ export default function Tickets() {
                 </div>
                 <div className="flex flex-col items-center md:items-start">
                   <span className="font-serif text-lg text-alquimia-wine block font-medium">Horário</span>
-                  <span className="font-light text-alquimia-dark text-sm block">A confirmar</span>
+                  <span className="font-light text-alquimia-dark text-sm block">Das 15h30 às 22h</span>
                 </div>
               </div>
 
