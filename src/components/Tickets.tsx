@@ -98,7 +98,7 @@ export default function Tickets() {
         
         {/* Ingresso / Escassez Section */}
         <motion.div 
-          className="bg-alquimia-light rounded-3xl p-6 sm:p-8 md:p-16 lg:p-20 text-center max-w-5xl mx-auto relative overflow-hidden shadow-2xl mb-24"
+          className="bg-alquimia-light rounded-3xl pt-16 pb-16 px-6 sm:p-8 md:p-16 lg:p-20 text-center max-w-5xl mx-auto relative overflow-hidden shadow-2xl mb-24"
           initial={{ opacity: 0, scale: 0.95, y: 20 }}
           whileInView={{ opacity: 1, scale: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
