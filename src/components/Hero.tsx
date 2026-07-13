@@ -28,7 +28,7 @@ export default function Hero() {
              <img 
                src="/lais-web.jpg" 
                alt="Alquimia Feminina" 
-               className="w-full h-auto absolute bottom-0 md:relative md:h-full md:object-cover md:object-center" 
+               className="w-full h-auto absolute bottom-0 translate-y-16 md:translate-y-0 md:relative md:h-full md:object-cover md:object-center" 
              />
            </picture>
         </div>
@@ -91,30 +91,30 @@ export default function Hero() {
               </div>
 
            </motion.div>
-        </div>
-      </section>
+         </div>
 
-      {/* Mobile CTA at the bottom of the DOM */}
-      <div className="md:hidden w-full px-6 pt-5 pb-10 bg-alquimia-wine border-t border-alquimia-gold/10 flex justify-center z-20 relative">
-        <a 
-          href="#tickets" 
-          className="group relative inline-flex items-center justify-center bg-alquimia-gold text-white pl-4 pr-10 py-3.5 rounded-sm font-medium hover:bg-alquimia-gold/80 transition-colors duration-300 w-full shadow-xl"
-        >
-           <div className="flex items-center gap-2">
-             <svg className="w-4 h-4 text-white/70" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z" />
-             </svg>
-             <span className="text-xs tracking-widest font-semibold uppercase whitespace-nowrap">GARANTA SEU LUGAR</span>
-           </div>
-           
-           {/* Fake perforations */}
-           <div className="absolute right-1.5 top-0 bottom-0 flex flex-col justify-evenly">
-             {[...Array(6)].map((_, i) => (
-               <div key={i} className="w-1.5 h-1.5 bg-alquimia-wine rounded-full"></div>
-             ))}
-           </div>
-        </a>
-      </div>
+         {/* Mobile CTA inside the section, absolute at the bottom */}
+         <div className="md:hidden absolute bottom-0 left-0 right-0 px-6 pt-16 pb-10 bg-gradient-to-t from-alquimia-wine via-alquimia-wine/90 to-transparent flex justify-center z-30">
+           <a 
+             href="#tickets" 
+             className="group relative inline-flex items-center justify-center bg-alquimia-gold text-white pl-4 pr-10 py-3.5 rounded-sm font-medium hover:bg-alquimia-gold/80 transition-colors duration-300 w-full shadow-xl"
+           >
+              <div className="flex items-center gap-2">
+                <svg className="w-4 h-4 text-white/70" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z" />
+                </svg>
+                <span className="text-xs tracking-widest font-semibold uppercase whitespace-nowrap">GARANTA SEU LUGAR</span>
+              </div>
+              
+              {/* Fake perforations */}
+              <div className="absolute right-1.5 top-0 bottom-0 flex flex-col justify-evenly">
+                {[...Array(6)].map((_, i) => (
+                  <div key={i} className="w-1.5 h-1.5 bg-alquimia-wine rounded-full"></div>
+                ))}
+              </div>
+           </a>
+         </div>
+      </section>
     </div>
   );
 }
