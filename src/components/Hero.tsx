@@ -24,9 +24,9 @@ export default function Hero() {
            {/* Gradients to ensure text readability */}
            <div className="absolute inset-0 bg-gradient-to-r from-alquimia-wine via-alquimia-wine/80 to-transparent z-10 hidden md:block"></div>
             <picture className="w-full h-full block">
-             <source media="(max-width: 767px)" srcSet="/lais-web-mobile.jpg" />
+             <source media="(max-width: 767px)" srcSet="/mobile-v3.webp" />
              <img 
-               src="/lais-web.jpg" 
+               src="/desktop-v3.webp" 
                alt="Alquimia Feminina" 
                className="w-full h-auto absolute bottom-0 translate-y-16 md:translate-y-0 md:relative md:h-full md:object-cover md:object-center" 
              />
