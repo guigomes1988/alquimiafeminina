@@ -71,9 +71,7 @@ export default function Hero() {
               {/* CTA */}
               <div className="mt-2 sm:mt-4 hidden md:flex justify-start w-full sm:w-auto">
                 <a 
-                  href="https://www.sympla.com.br/evento/alquimia-feminina/3498690"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="#tickets" 
                   className="group relative inline-flex items-center justify-center bg-alquimia-gold text-white pl-4 pr-10 md:pl-6 md:pr-12 py-3.5 md:py-4 rounded-sm font-medium hover:bg-alquimia-gold/80 transition-colors duration-300 w-full sm:w-auto shadow-xl"
                 >
                    <div className="flex items-center gap-2 md:gap-3">
@@ -98,9 +96,7 @@ export default function Hero() {
          {/* Mobile CTA inside the section, absolute at the bottom */}
          <div className="md:hidden absolute bottom-0 left-0 right-0 px-6 pt-16 pb-10 bg-gradient-to-t from-alquimia-wine via-alquimia-wine/90 to-transparent flex justify-center z-30">
            <a 
-             href="https://www.sympla.com.br/evento/alquimia-feminina/3498690"
-             target="_blank"
-             rel="noopener noreferrer"
+             href="#tickets" 
              className="group relative inline-flex items-center justify-center bg-alquimia-gold text-white pl-4 pr-10 py-3.5 rounded-sm font-medium hover:bg-alquimia-gold/80 transition-colors duration-300 w-full shadow-xl"
            >
               <div className="flex items-center gap-2">

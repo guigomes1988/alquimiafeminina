@@ -202,9 +202,22 @@ export default function Tickets() {
 
           {/* Botão de Inscrição Centralizado */}
           <div className="mt-12 text-center border-t border-alquimia-sand/20 pt-8">
-            <button className="w-auto bg-alquimia-wine text-white px-8 sm:px-12 py-4 sm:py-5 text-sm sm:text-base md:text-lg font-semibold hover:bg-alquimia-terra transition-colors duration-300 rounded-xl shadow-lg hover:shadow-xl uppercase tracking-widest whitespace-nowrap">
+            <motion.a 
+              href="https://www.sympla.com.br/evento/alquimia-feminina/3498690"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block w-auto bg-alquimia-wine text-white px-8 sm:px-12 py-4 sm:py-5 text-sm sm:text-base md:text-lg font-semibold hover:bg-alquimia-terra transition-colors duration-300 rounded-xl shadow-lg hover:shadow-xl uppercase tracking-widest whitespace-nowrap"
+              animate={{ y: [0, -8, 0] }}
+              transition={{
+                duration: 2,
+                repeat: Infinity,
+                ease: "easeInOut"
+              }}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
               GARANTA SUA VAGA
-            </button>
+            </motion.a>
           </div>
         </motion.div>
 
