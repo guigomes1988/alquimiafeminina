@@ -69,7 +69,7 @@ export default function Hero() {
               </h1>
 
               {/* CTA */}
-              <div className="mt-2 sm:mt-4 flex justify-center sm:justify-start w-full sm:w-auto">
+              <div className="mt-2 sm:mt-4 hidden md:flex justify-start w-full sm:w-auto">
                 <a 
                   href="#tickets" 
                   className="group relative inline-flex items-center justify-center bg-alquimia-gold text-white pl-4 pr-10 md:pl-6 md:pr-12 py-3.5 md:py-4 rounded-sm font-medium hover:bg-alquimia-gold/80 transition-colors duration-300 w-full sm:w-auto shadow-xl"
@@ -93,6 +93,28 @@ export default function Hero() {
            </motion.div>
         </div>
       </section>
+
+      {/* Mobile CTA at the bottom of the DOM */}
+      <div className="md:hidden w-full px-6 pt-5 pb-10 bg-alquimia-wine border-t border-alquimia-gold/10 flex justify-center z-20 relative">
+        <a 
+          href="#tickets" 
+          className="group relative inline-flex items-center justify-center bg-alquimia-gold text-white pl-4 pr-10 py-3.5 rounded-sm font-medium hover:bg-alquimia-gold/80 transition-colors duration-300 w-full shadow-xl"
+        >
+           <div className="flex items-center gap-2">
+             <svg className="w-4 h-4 text-white/70" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z" />
+             </svg>
+             <span className="text-xs tracking-widest font-semibold uppercase whitespace-nowrap">GARANTA SEU LUGAR</span>
+           </div>
+           
+           {/* Fake perforations */}
+           <div className="absolute right-1.5 top-0 bottom-0 flex flex-col justify-evenly">
+             {[...Array(6)].map((_, i) => (
+               <div key={i} className="w-1.5 h-1.5 bg-alquimia-wine rounded-full"></div>
+             ))}
+           </div>
+        </a>
+      </div>
     </div>
   );
 }
