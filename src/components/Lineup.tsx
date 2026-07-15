@@ -72,7 +72,7 @@ const schedule = [
     number: "06",
   },
   {
-    type: "Coffee Break",
+    type: "Coquetel",
     title: "Networking e Fotos",
     speaker: "Presença de Mônica Salgado",
     description: "Momentos de interação, networking e sessão de fotos.",
