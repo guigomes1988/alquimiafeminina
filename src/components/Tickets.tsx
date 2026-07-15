@@ -126,7 +126,7 @@ export default function Tickets() {
             <div className="flex flex-col items-center md:items-end text-center md:text-right justify-start gap-6">
               <div className="w-24 h-24 sm:w-32 sm:h-32 shrink-0 rounded-xl overflow-hidden border border-alquimia-sand">
                 <img 
-                  src="/palestrantes/Lais Stefhanini.jpeg" 
+                  src="/palestrantes/Lais Stefhanini.webp" 
                   alt="Lais Stefhanini" 
                   className="w-full h-full object-cover object-top"
                 />

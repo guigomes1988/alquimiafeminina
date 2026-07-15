@@ -1,10 +1,12 @@
 const images = [
-  "/palestrantes/Dra Anamarya Rocha.jpeg",
-  "/palestrantes/Dra. Anna Rita Peltier.jpeg",
-  "/palestrantes/Isabela de Pádua.jpeg",
-  "/palestrantes/Joseanna Fagundes.jpg",
-  "/palestrantes/Lais Stefhanini.jpeg",
-  "/palestrantes/Mônica Salgado.jpeg",
+  "/palestrantes/Dra. Anna Rita Peltier.webp",
+  "/palestrantes/Isabela de Pádua.webp",
+  "/palestrantes/Joseanna Fagundes.webp",
+  "/palestrantes/Lais Stefhanini.webp",
+  "/palestrantes/Mônica Salgado.webp",
+  "/palestrantes/Maria Gabriela.webp",
+  "/palestrantes/Josiane.webp",
+  "/palestrantes/Maria Rosa.webp",
 ];
 
 export default function GalleryMarquee() {

@@ -22,7 +22,7 @@ export default function MainSpeaker() {
               {/* Image */}
               <div className="relative z-10 w-full aspect-[4/5] overflow-hidden bg-alquimia-light">
                 <img 
-                  src="/palestrantes/Mônica Salgado.jpeg" 
+                  src="/palestrantes/Mônica Salgado.webp" 
                   alt="Mônica Salgado" 
                   className="w-full h-full object-cover object-top"
                 />
