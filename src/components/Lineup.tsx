@@ -37,14 +37,6 @@ const schedule = [
     image: "/palestrantes/Joseanna Fagundes.webp",
   },
   {
-    type: "Intervalo",
-    title: "Defesa pessoal feminina",
-    speaker: "Isabela de Pádua",
-    description: "",
-    highlight: false,
-    image: "/palestrantes/Isabela de Pádua.webp",
-  },
-  {
     type: "Palestra",
     title: "História, jornada de autoconhecimento e visão de futuro",
     speaker: "Lais Stefhanini",
@@ -52,6 +44,14 @@ const schedule = [
     highlight: false,
     image: "/palestrantes/Lais Stefhanini.webp",
     number: "04",
+  },
+  {
+    type: "Intervalo",
+    title: "Defesa pessoal feminina",
+    speaker: "Isabela de Pádua",
+    description: "",
+    highlight: false,
+    image: "/palestrantes/Isabela de Pádua.webp",
   },
   {
     type: "Palestra Principal",
